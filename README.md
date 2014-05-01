@@ -23,7 +23,7 @@ Simply type them as you would any other command (a, b, left, etc.) in the Twitch
 
 ### User script
 
-If you use Greasemonkey, Tampermonkey, etc, this is the URL to the script:
+If you use Greasemonkey, Tampermonkey, etc, this is the URL to [the script](http://github.com/graulund/tppcommands/raw/master/tppcommands.user.js):
 
 `http://github.com/graulund/tppcommands/raw/master/tppcommands.user.js`
 
