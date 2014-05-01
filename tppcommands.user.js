@@ -1,11 +1,12 @@
 // ==UserScript==
 // @name        Twitch Plays Pokemon Commands
-// @namespace   test.test
+// @namespace   github.com/graulund/tppcommands
 // @description Helping you press what you want on the touch screen by converting commands into coordinates.
 
 // @include     /^https?://(www|beta)\.twitch\.tv\/(twitchplayspokemon(/(chat.*)?)?|chat\/.*channel=twitchplayspokemon.*)$/
 
 // @version     1.0
+// @updateURL   http://github.com/graulund/tppcommands/raw/master/tppcommands.user.js
 // @grant       unsafeWindow
 // ==/UserScript==
 
