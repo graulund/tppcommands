@@ -16,6 +16,7 @@ Here's the list of commands that work:
 * **poke5**: 100,103
 * **poke6**: 200,145
 * **run**:   126,191
+* **switch**: 210,170
 
 Simply type them as you would any other command (a, b, left, etc.) in the Twitch chat -- i.e. it works with extra spaces/text and no matter what casing you use, as long as you start your message with it.
 
