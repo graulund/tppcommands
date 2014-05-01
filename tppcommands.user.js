@@ -52,12 +52,16 @@ var touchCommands = {
 	"att2":  "200,54",
 	"att3":  "126,102",
 	"att4":  "200,102",
+	"learn1": ["30,170", "100,70"],
+	"learn2": ["30,170", "200,70"],
+	"learn3": ["30,170", "126,90", "100,100"],
+	"learn4": ["30,170", "126,90", "200,100"],
 	"poke1": "100,1",
 	"poke2": "200,10",
 	"poke3": "100,85",
 	"poke4": "200,85",
 	"poke5": "100,103",
-	"poke6": "200,145",
+	"poke6": "200,103",
 	"run":   "126,191",
 	"switch": "210,170"
 };
@@ -76,19 +80,27 @@ $(function(){
 	var Room_proto = myWindow.App.Room.prototype;
 	var original_send = Room_proto.send;
 	Room_proto.send = function(message){
-		
-		//var command = message.toLowerCase().replace(/^\s+|\s+$/, "");
+
 		var commandRegex = /^\s*([a-z0-9]+)\b/, m = message.toLowerCase().match(commandRegex);
 
 		if(m instanceof Array){
 			var command = m[0];
 
 			if(command in touchCommands){
+			
+				// What is the output of this command?
+				var output = touchCommands[command];
+				
+				// Output randomization
+				if(output instanceof Array){
+					output = output[Math.floor(Math.random()*output.length)];
+				}
+			
 				// Transform!
-				arguments[0] = message = message.replace(commandRegex, touchCommands[command]);
+				arguments[0] = message = message.replace(commandRegex, output);
 
 				// Log
-				console.log("TPP Commands: Sent command \"" + touchCommands[command] + "\" (\"" + command + "\")");
+				console.log("TPP Commands: Sent command \"" + output + "\" (\"" + command + "\")");
 			}
 		}
 

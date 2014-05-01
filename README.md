@@ -9,14 +9,20 @@ Here's the list of commands that work:
 * **att2**:  200,54
 * **att3**:  126,102
 * **att4**:  200,102
+* **learn1**: 30,170 / 100,70
+* **learn2**: 30,170 / 200,70
+* **learn3**: 30,170 / 126,90 / 100,100
+* **learn4**: 30,170 / 126,90 / 200,100
 * **poke1**: 100,1
 * **poke2**: 200,10
 * **poke3**: 100,85
 * **poke4**: 200,85
 * **poke5**: 100,103
-* **poke6**: 200,145
+* **poke6**: 200,103
 * **run**:   126,191
 * **switch**: 210,170
+
+Commands with more than one set of coordinates means that one of these coordinate sets are chosen at random.
 
 Simply type them as you would any other command (a, b, left, etc.) in the Twitch chat -- i.e. it works with extra spaces/text and no matter what casing you use, as long as you start your message with it.
 
