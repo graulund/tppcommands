@@ -5,7 +5,7 @@
 
 // @include     /^https?://(www|beta)\.twitch\.tv\/(twitchplayspokemon(/(chat.*)?)?|chat\/.*channel=twitchplayspokemon.*)$/
 
-// @version     2.0
+// @version     2.1
 // @updateURL   http://github.com/graulund/tppcommands/raw/master/tppcommands.user.js
 // @grant       unsafeWindow
 // ==/UserScript==
@@ -84,7 +84,7 @@ $(function(){
 	var original_send = Room_proto.send;
 	Room_proto.send = function(message){
 
-		var commandRegex = /^\s*([a-z0-9]+)\b/, m = message.toLowerCase().match(commandRegex);
+		var commandRegex = /^\s*([a-z0-9]+)\b/i, m = message.toLowerCase().match(commandRegex);
 
 		if(m instanceof Array){
 			var command = m[0];
