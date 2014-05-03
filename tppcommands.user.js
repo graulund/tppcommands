@@ -34,6 +34,8 @@
  (function(){
 "use strict";
 
+var TPP_C_VERSION = "2.1";
+
 var myWindow;
 try {
     myWindow = unsafeWindow;
@@ -43,7 +45,7 @@ try {
 
 var $ = myWindow.jQuery, console = myWindow.console;
 
-console.log("TPP Commands launched");
+console.log("TPP Commands version " + TPP_C_VERSION + " launched");
 
 // Configuration (all keys should be lowercase)
 
