@@ -5,22 +5,25 @@ The DS touch screen is hard to press in Twitch Plays Pokemon. This userscript of
 ## Commands
 Here's the list of commands that work:
 
-* **att1**:  126,54
-* **att2**:  200,54
-* **att3**:  126,102
-* **att4**:  200,102
+* **att1**:   126,54
+* **att2**:   200,54
+* **att3**:   126,102
+* **att4**:   200,102
+* **heal**:   40,150 / 40,20
 * **learn1**: 30,170 / 100,70
 * **learn2**: 30,170 / 200,70
 * **learn3**: 30,170 / 126,90 / 100,100
 * **learn4**: 30,170 / 126,90 / 200,100
-* **poke1**: 100,1
-* **poke2**: 200,10
-* **poke3**: 100,85
-* **poke4**: 200,85
-* **poke5**: 100,103
-* **poke6**: 200,103
-* **run**:   126,191
+* **poke1**:  100,1
+* **poke2**:  200,10
+* **poke3**:  100,85
+* **poke4**:  200,85
+* **poke5**:  100,103
+* **poke6**:  200,103
+* **reuse**:  40,170
+* **run**:    126,191
 * **switch**: 210,170
+* **throw**:  40,150 / 170,20
 
 Commands with more than one set of coordinates means that one of these coordinate sets are chosen at random.
 
