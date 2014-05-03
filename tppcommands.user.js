@@ -5,7 +5,7 @@
 
 // @include     /^https?://(www|beta)\.twitch\.tv\/(twitchplayspokemon(/(chat.*)?)?|chat\/.*channel=twitchplayspokemon.*)$/
 
-// @version     1.0
+// @version     2.0
 // @updateURL   http://github.com/graulund/tppcommands/raw/master/tppcommands.user.js
 // @grant       unsafeWindow
 // ==/UserScript==
