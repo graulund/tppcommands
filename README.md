@@ -30,16 +30,16 @@ Simply type them as you would any other command (a, b, left, etc.) in the Twitch
 
 ### User script
 
-If you use Greasemonkey, Tampermonkey, etc, this is the URL to [the script](http://github.com/graulund/tppcommands/raw/master/tppcommands.user.js):
+If you use Greasemonkey, Tampermonkey, etc, this is the URL to [the script](http://graulund.github.io/tppcommands/tppcommands.user.js):
 
-`http://github.com/graulund/tppcommands/raw/master/tppcommands.user.js`
+`http://graulund.github.io/tppcommands/tppcommands.user.js`
 
 ### Bookmark
 
 If not, you can install it via a bookmark.
 
 1. Go to the bookmark menu of your browser and add a new bookmark with the title of your choice.
-2. Copy the following snippet and paste it into the URL field: `javascript:(function(){document.body.appendChild(document.createElement('script')).src='http://github.com/graulund/tppcommands/raw/master/tppcommands.user.js';})();`
+2. Copy the following snippet and paste it into the URL field: `javascript:(function(){document.body.appendChild(document.createElement('script')).src='http://graulund.github.io/tppcommands/tppcommands.user.js';})();`
 3. Save the Bookmark.
 
 From now on, you can just click on that bookmark when you have the TPP tab open to enable the script.
