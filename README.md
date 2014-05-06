@@ -5,13 +5,13 @@ The DS touch screen is hard to press in Twitch Plays Pokemon. This userscript of
 ## Commands
 Here's the list of commands that work:
 
-### Use attack, forget a move about to be learned 
+#### Use attack, forget a move about to be learned 
 * **a1f** : 100,40 / B
 * **a2f** : 200,40 / B
 * **a3f** : 100,94 / B
 * **a4f** : 200,94 / B
 
-### Use aatack X, learn a new move over attack y.  In the form axly (lower case letters a and l) 
+#### Use attack X, learn a new move over attack y.  In the form axly (lower case letters a and l) 
 * **a1l1**: 5,170 / 100,60
 * **a1l2**: 5,170 / 100,30 / 200,80
 * **a1l3**: 5,170 / 100,30 / 100,30 / 100,94
@@ -29,13 +29,13 @@ Here's the list of commands that work:
 * **a4l3**: 5,170 / 200,142 / 200,142 / 100,94
 * **a4l4**: 5,170 / 126,90 / 200,100
  
-### General attacking move 
+#### General attacking move 
 * **att1**:   126,54
 * **att2**:   200,54
 * **att3**:   126,102
 * **att4**:   200,102
 
-### Commands to switch and choose Pokémon 
+#### Commands to switch and choose Pokémon 
 * **switch**: 210,170
 * **poke1**:  100,1
 * **poke2**:  200,10
@@ -44,13 +44,13 @@ Here's the list of commands that work:
 * **poke5**:  100,103
 * **poke6**:  200,103
 
-### Miscellaneous commands 
+#### Miscellaneous commands 
 * **heal**:   40,150 / 40,20
 * **reuse**:  40,170
 * **run**:    126,191
 * **throw**:  40,150 / 170,20
 
-### Obsolete learn commands.  Only use in a long learn cycle.
+#### Obsolete learn commands.  Only use in a long learn cycle.
 * **learn1**: 30,170 / 100,70
 * **learn2**: 30,170 / 200,70
 * **learn3**: 30,170 / 126,90 / 100,100
