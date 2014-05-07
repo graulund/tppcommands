@@ -31,9 +31,13 @@ Here's the list of commands that work:
  
 #### General attacking move 
 * **att1**:   126,54
-* **att2**:   200,54
+* **att2**:   130,54
 * **att3**:   126,102
-* **att4**:   200,102
+* **att4**:   130,102
+
+#### Double battle target selection
+* **targ1*: 100,10
+* **targ2*: 200,10
 
 #### Commands to switch and choose Pokémon 
 * **switch**: 210,170
