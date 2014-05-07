@@ -36,8 +36,8 @@ Here's the list of commands that work:
 * **att4**:   130,102
 
 #### Double battle target selection
-* **targ1*: 100,10
-* **targ2*: 200,10
+* **targ1**: 100,10
+* **targ2**: 200,10
 
 #### Commands to switch and choose Pokémon 
 * **switch**: 210,170
