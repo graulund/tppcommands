@@ -5,7 +5,7 @@
 
 // @include     /^https?://(www|beta)\.twitch\.tv\/(twitchplayspokemon(/(chat.*)?)?|chat\/.*channel=twitchplayspokemon.*)$/
 
-// @version     2.2
+// @version     2.3
 // @updateURL   http://github.com/graulund/tppcommands/raw/master/tppcommands.user.js
 // @grant       unsafeWindow
 // ==/UserScript==
@@ -34,7 +34,7 @@
  (function(){
 "use strict";
 
-var TPP_C_VERSION = "2.2";
+var TPP_C_VERSION = "2.3";
 
 var myWindow;
 try {
@@ -71,9 +71,9 @@ var touchCommands = {
 	"a4l3": ["5,170","200,142","200,142","100,94"],
 	"a4l4": ["5,170","126,90","200,100"],
 	"att1":  "126,54",
-	"att2":  "200,54",
+	"att2":  "130,54",
 	"att3":  "126,102",
-	"att4":  "200,102",
+	"att4":  "130,102",
 	"heal": ["40,150", "40,20"],
 	"learn1": ["30,170", "100,70"],
 	"learn2": ["30,170", "200,70"],
@@ -88,6 +88,8 @@ var touchCommands = {
 	"reuse": "40,170",
 	"run":   "126,191",
 	"switch": "210,170",
+	"targ1": "100,10",
+	"targ2": "200,10",
 	"throw": ["40,150", "170,20"]
 };
 
