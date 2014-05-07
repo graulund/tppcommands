@@ -5,8 +5,8 @@
 
 // @include     /^https?://(www|beta)\.twitch\.tv\/(twitchplayspokemon(/(chat.*)?)?|chat\/.*channel=twitchplayspokemon.*)$/
 
-// @version     2.3
-// @updateURL   http://github.com/graulund/tppcommands/raw/master/tppcommands.user.js
+// @version     3.0
+// @updateURL   http://graulund.github.io/tppcommands/tppcommands.user.js
 // @grant       unsafeWindow
 // ==/UserScript==
 
@@ -34,7 +34,7 @@
  (function(){
 "use strict";
 
-var TPP_C_VERSION = "2.3";
+var TPP_C_VERSION = "3.0";
 
 var myWindow;
 try {
