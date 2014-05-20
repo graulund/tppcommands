@@ -56,11 +56,11 @@ Here's the list of commands that work:
 * **throw**:  40,150 / 170,20
 
 #### Ball commands for the Pokemon menu and Day Care
-* **ball1**: 10,30
+* **ball1**: 15,30
 * **ball2**: 240,30
-* **ball3**: 10,90
+* **ball3**: 15,90
 * **ball4**: 240,90
-* **ball5**: 10,150
+* **ball5**: 15,150
 * **ball6**: 240,150
 
 #### Obsolete learn commands.  Only use in a long learn cycle.
