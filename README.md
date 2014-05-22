@@ -37,6 +37,10 @@ Here's the list of commands that work:
 * **att4**:   170,102
 
 #### Double battle attacks and target selection
+* **att1d**: 126,54
+* **att2d**: 130,54
+* **att3d**: 126,94
+* **att4d**: 130,102
 * **targ1**: 5,10
 * **targ2**: 200,10
 
