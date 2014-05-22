@@ -6,69 +6,54 @@ The DS touch screen is hard to press in Twitch Plays Pokemon. This userscript of
 Here's the list of commands that work:
 
 #### Use attack, forget a move about to be learned 
-* **a1f** : 100,46 / B
-* **a2f** : 130,46 / B
-* **a3f** : 120,94 / B
-* **a4f** : 130,94 / B
+* **a1f** : 90,46 / B
+* **a2f** : 170,46 / B
+* **a3f** : 90,94 / B
+* **a4f** : 170,94 / B
 
 #### Use attack X, learn a new move over attack y. learn is only meant for the final step. 
 * **learn**: 5,170 
-* **a1l1**: 120,60
-* **a1l2**: 120,46 / 130,80
-* **a1l3**: 120,46 / 120,46 / 120,102
-* **a1l4**: 120,46 / 120,46 / 130,102
-* **a2l1**: 130,46 / 120,80
-* **a2l2**: 130,60
-* **a2l3**: 130,46 / 130,46 / 120,102
-* **a2l4**: 130,46 / 130,46 / 130,102
-* **a3l1**: 120,90
-* **a3l2**: 120,94 / 120,80
-* **a3l3**: 120,94 / 120,102
-* **a3l4**: 120,94 / 120,94 / 130,102
-* **a4l1**: 130,94 / 120,80
-* **a4l2**: 130,90
-* **a4l3**: 130,94 / 130,94 / 120,102
-* **a4l4**: 130,94 / 130,102
+* **a1l1**: 90,60
+* **a1l2**: 90,46 / 170,80
+* **a1l3**: 90,46 / 90,46 / 90,102
+* **a1l4**: 90,46 / 90,46 / 170,102
+* **a2l1**: 170,46 / 90,80
+* **a2l2**: 170,60
+* **a2l3**: 170,46 / 170,46 / 90,102
+* **a2l4**: 170,46 / 170,46 / 170,102
+* **a3l1**: 90,90
+* **a3l2**: 90,94 / 170,80
+* **a3l3**: 90,94 / 90,102
+* **a3l4**: 90,94 / 90,94 / 170,102
+* **a4l1**: 170,94 / 90,80
+* **a4l2**: 170,90
+* **a4l3**: 170,94 / 170,94 / 90,102
+* **a4l4**: 170,94 / 170,102
  
 #### General attacking move 
 * **att1**:   126,54
-* **att2**:   130,54
-* **att3**:   126,102
-* **att4**:   130,102
+* **att2**:   170,54
+* **att3**:   126,94
+* **att4**:   170,102
 
-#### Double battle target selection
-* **targ1**: 100,10
+#### Double battle attacks and target selection
+* **targ1**: 5,10
 * **targ2**: 200,10
 
 #### Commands to switch and choose Pokémon 
-* **switch**: 210,170
-* **poke1**:  100,1
-* **poke2**:  200,10
-* **poke3**:  100,85
-* **poke4**:  200,85
-* **poke5**:  100,103
-* **poke6**:  200,103
+* **switch**: 210,190
+* **poke1**:  90,15
+* **poke2**:  160,15
+* **poke3**:  90,85
+* **poke4**:  160,85
+* **poke5**:  90,103
+* **poke6**:  160,103
 
 #### Miscellaneous commands 
-* **heal**:   40,150 / 40,20
-* **reuse**:  40,170
+* **heal**:   80,150 / 80,20
+* **reuse**:  80,170
 * **run**:    126,191
-* **throw**:  40,150 / 170,20
-
-#### Ball commands for the Pokemon menu and Day Care
-* **ball1**: 15,30
-* **ball2**: 240,30
-* **ball3**: 15,90
-* **ball4**: 240,90
-* **ball5**: 15,150
-* **ball6**: 240,150
-
-#### Obsolete learn commands.  Only use in a long learn cycle.
-* **learn1**: 30,170 / 100,70
-* **learn2**: 30,170 / 200,70
-* **learn3**: 30,170 / 126,90 / 100,100
-* **learn4**: 30,170 / 126,90 / 200,100
-
+* **throw**:  80,150 / 160,20
 
 Commands with more than one set of coordinates means that one of these coordinate sets are chosen at random.  Sometimes one input is more common than others.
 
