@@ -5,7 +5,7 @@
 
 // @include     /^https?://(www|beta)\.twitch\.tv\/(twitchplayspokemon(/(chat.*)?)?|chat\/.*channel=twitchplayspokemon.*)$/
 
-// @version 6.0
+// @version 7.0
 // @updateURL http://graulund.github.io/tppcommands/tppcommands.user.js
 // @grant       unsafeWindow
 // ==/UserScript==
@@ -34,7 +34,7 @@
  (function(){
 "use strict";
 
-var TPP_C_VERSION = "6.0";
+var TPP_C_VERSION = "7.0";
 
 var myWindow;
 try {
@@ -78,8 +78,16 @@ var touchCommands = {
 	"att2d": "130,54",
 	"att3d": "126,94",
 	"att4d": "130,102",
+	"calljoey": ["55,155","166,166","180,80"]
 	"heal": ["80,150", "80,20"],
 	"learn": "5,170",
+	"order": ["50,80", "180,80"],
+	"order1": "80,14",
+	"order2": "180,14",
+	"order3": "80,80",
+	"order4": "180,80",
+	"order5": "80,14",
+	"order6": "180,140",
 	"poke1": "90,15",
 	"poke2": "160,15",
 	"poke3": "90,85",
