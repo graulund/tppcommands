@@ -44,7 +44,7 @@ Here's the list of commands that work:
 * **targ1**: 5,10
 * **targ2**: 200,10
 
-#### Commands to switch and choose Pokémon 
+#### Commands to switch and choose Pokémon in battle
 * **switch**: 210,190
 * **poke1**:  90,15
 * **poke2**:  160,15
@@ -52,6 +52,15 @@ Here's the list of commands that work:
 * **poke4**:  160,85
 * **poke5**:  90,103
 * **poke6**:  160,103
+
+#### Commands to change team order outside of battle
+* **order** : 50,80 / 180,80
+* **order1**: 80,14
+* **order2**: 180,14
+* **order3**: 80,80
+* **order4**: 180,80
+* **order5**: 80,14
+* **order6**: 180,140
 
 #### Miscellaneous commands 
 * **heal**:   80,150 / 80,20
