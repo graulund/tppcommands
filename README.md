@@ -63,10 +63,10 @@ Here's the list of commands that work:
 * **order6**: 180,140
 
 #### Miscellaneous commands 
-* **heal**:   80,150 / 80,20
-* **reuse**:  80,180
+* **heal**:   77,150 / 80,20
+* **reuse**:  77,177
 * **run**:    126,191
-* **throw**:  80,150 / 160,20
+* **throw**:  77,150 / 160,20
 
 Commands with more than one set of coordinates means that one of these coordinate sets are chosen at random.  Sometimes one input is more common than others.
 
