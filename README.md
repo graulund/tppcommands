@@ -59,7 +59,7 @@ Here's the list of commands that work:
 * **order2**: 180,14
 * **order3**: 80,80
 * **order4**: 180,80
-* **order5**: 80,14
+* **order5**: 80,140
 * **order6**: 180,140
 
 #### Miscellaneous commands 
