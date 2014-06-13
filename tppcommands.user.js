@@ -5,7 +5,7 @@
 
 // @include     /^https?://(www|beta)\.twitch\.tv\/(twitchplayspokemon(/(chat.*)?)?|chat\/.*channel=twitchplayspokemon.*)$/
 
-// @version 8.1
+// @version 8.2
 // @updateURL http://graulund.github.io/tppcommands/tppcommands.user.js
 // @grant       unsafeWindow
 // ==/UserScript==
@@ -34,7 +34,7 @@
  (function(){
 "use strict";
 
-var TPP_C_VERSION = "8.1";
+var TPP_C_VERSION = "8.2";
 
 var myWindow;
 try {
@@ -81,7 +81,7 @@ var touchCommands = {
 	"poke4": "133,77",
 	"poke5": "1,133",
 	"poke6": "133,133",
-	"reuse": "77,177",
+	"reuse": "77,188",
 	"run":   "126,191",
 	"switch": "210,190",
 	"throw": ["77,150", "160,20"]
