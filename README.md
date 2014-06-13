@@ -2,65 +2,51 @@
 
 The DS touch screen is hard to press in Twitch Plays Pokemon. This userscript offers a way to press oft-used buttons on the touch screen, like the different attacks, mons and so on, by converting predefined commands into coordinates that the stream accepts.
 
+
+These commands are now optimised for Pokémon Black
 ## Commands
 Here's the list of commands that work:
 
 #### Use attack, forget a move about to be learned 
-* **a1f** : 90,46 / B
-* **a2f** : 170,46 / B
-* **a3f** : 90,94 / B
-* **a4f** : 170,94 / B
+* **a1f** : 1,40 / B
+* **a2f** : 255,40 / B
+* **a3f** : 1,85 / B
+* **a4f** : 255,85 / B
 
 #### Use attack X, learn a new move over attack y. learn is only meant for the final step. 
 * **learn**: 5,170 
-* **a1l1**: 90,60
-* **a1l2**: 90,46 / 170,80
-* **a1l3**: 90,46 / 90,46 / 90,102
-* **a1l4**: 90,46 / 90,46 / 170,102
-* **a2l1**: 170,46 / 90,80
-* **a2l2**: 170,60
-* **a2l3**: 170,46 / 170,46 / 90,102
-* **a2l4**: 170,46 / 170,46 / 170,102
-* **a3l1**: 90,90
-* **a3l2**: 90,94 / 170,80
-* **a3l3**: 90,94 / 90,102
-* **a3l4**: 90,94 / 90,94 / 170,102
-* **a4l1**: 170,94 / 90,80
-* **a4l2**: 170,90
-* **a4l3**: 170,94 / 170,94 / 90,102
-* **a4l4**: 170,94 / 170,102
- 
-#### General attacking move 
-* **att1**:   126,54
-* **att2**:   170,54
-* **att3**:   126,94
-* **att4**:   170,102
+* **a1l1**: 1,75
+* **a1l2**: 1,40 / 1,40 / 255,75
+* **a1l3**: 1,40 / 1,140
+* **a1l4**: 1,40 / 255,140
+* **a2l1**: 255,40 / 255,40 / 1,75
+* **a2l2**: 255,75
+* **a2l3**: 255,40 / 1,140
+* **a2l4**: 255,40 / 255,140
 
-#### Double battle attacks and target selection
-* **att1d**: 126,54
-* **att2d**: 130,54
-* **att3d**: 126,94
-* **att4d**: 130,102
-* **targ1**: 5,10
-* **targ2**: 200,10
+#### General attacking move 
+* **att1**:   1,75
+* **att2**:   255,75
+* **att3**:   1,85
+* **att4**:   255,85
 
 #### Commands to switch and choose Pokémon in battle
 * **switch**: 210,190
-* **poke1**:  90,15
-* **poke2**:  160,15
-* **poke3**:  90,85
-* **poke4**:  160,85
-* **poke5**:  90,103
-* **poke6**:  160,103
+* **poke1**:  1,22
+* **poke2**:  133,22
+* **poke3**:  1,77
+* **poke4**:  133,77
+* **poke5**:  1,133
+* **poke6**:  133,133
 
 #### Commands to change team order outside of battle
-* **order** : 50,80 / 180,80
-* **order1**: 80,14
-* **order2**: 180,14
-* **order3**: 80,80
-* **order4**: 180,80
-* **order5**: 80,140
-* **order6**: 180,140
+* **order** : X / 44,44 / 177,133
+* **order1**: 1,22
+* **order2**: 133,22
+* **order3**: 1,77
+* **order4**: 133,77
+* **order5**: 1,133
+* **order6**: 133,133
 
 #### Miscellaneous commands 
 * **heal**:   77,150 / 80,20
