@@ -49,6 +49,8 @@ console.log("TPP Commands version " + TPP_C_VERSION + " launched");
 
 // Configuration (all keys should be lowercase)
 
+// Maybe add explanations for the commands?
+
 var touchCommands = {
 	"a1f" : ["100,40","B"],
 	"a1l1": ["5,170","100,60"],
