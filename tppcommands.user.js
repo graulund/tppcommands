@@ -89,8 +89,13 @@ var touchCommands = {
 
 (function addAliases() {
 	var aliases = {
-		'':  /^att/,
-		'r': /^run/,
+		// Examples:
+
+		// att1 = 1, att2 = 2, etc.
+		// '':  /^att/,
+
+		// run = r
+		// 'r': /^run/,
 	}, alias;
 
 	for (var repl in aliases)
