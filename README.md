@@ -50,7 +50,7 @@ Here's the list of commands that work:
 
 #### Miscellaneous commands 
 * **heal**:   77,150 / 80,20
-* **reuse**:  77,177
+* **reuse**:  77,188
 * **run**:    126,191
 * **throw**:  77,150 / 160,20
 
