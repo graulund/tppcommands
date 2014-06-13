@@ -40,7 +40,7 @@ Here's the list of commands that work:
 * **poke6**:  133,133
 
 #### Commands to change team order outside of battle
-* **order** : X / 44,44 / 177,133
+* **order** : X / 44,44 / 255,133
 * **order1**: 1,22
 * **order2**: 133,22
 * **order3**: 1,77
