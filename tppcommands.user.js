@@ -87,6 +87,27 @@ var touchCommands = {
 	"throw": ["77,150", "160,20"]
 };
 
+(function addAliases() {
+	var aliases = {
+		// Examples:
+
+		// att1 = 1, att2 = 2, etc.
+		// '':  /^att/,
+
+		// run = r
+		// 'r': /^run/,
+	}, alias;
+
+	for (var repl in aliases)
+		for (var command in touchCommands)
+			if (aliases[repl].test(command))
+				console.log('Alias %s = %s ("%s")',
+					alias = command.replace(aliases[repl], repl),
+					command,
+					(touchCommands[alias] = touchCommands[command]).join('" / "')
+				);
+})();
+
 // Do it!
 
 var getStringMatch = function(str, regex){
