@@ -105,6 +105,13 @@ var touchCommands = {
 	"withdraw": "255,55",
 	"liberate": "210,115", // release
 	"quit": ["255,140","x+b"],
+	// directions
+	"e": "up",
+	"s": "left",
+	"d": "down",
+	"f": "right",
+	// misc
+	"=": "+", // obviates the need for shift on an American keyboard
 
 };
 
@@ -115,8 +122,8 @@ var touchCommands = {
 		'': /^att/,
 		// heal = h
 		'h': /^heal/,
-		// reuse = i for item
-		'i': /^reuse/,
+		// reuse = u for reUse
+		'u': /^reuse/,
 		// run = r
 		'r': /^run/,
 		// switch = s
