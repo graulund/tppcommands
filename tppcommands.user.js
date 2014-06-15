@@ -52,13 +52,13 @@ console.log("TPP Commands version " + TPP_C_VERSION + " launched");
 var touchCommands = {
 	// battle commands
 	"a1f" : ["1,40","B"],
-	"a1l1": ["1,75"],
+	"a1l1": "1,75",
 	"a1l2": ["1,40","1,40","255,75"],
 	"a1l3": ["1,40","1,140"],
 	"a1l4": ["1,40","255,140"],
 	"a2f" : ["255,40","B"],
 	"a2l1": ["255,40","255,40","1,75"],
-	"a2l2": ["255,75"],
+	"a2l2": "255,75",
 	"a2l3": ["255,40","1,140"],
 	"a2l4": ["255,40","255,140"],
 	"a3f" : ["1,85","B"],
@@ -104,14 +104,8 @@ var touchCommands = {
 	"deposit": "255,55",
 	"withdraw": "255,55",
 	"liberate": "210,115", // release
-	"quit": ["255,140","x+b"],
-	// directions
-	"e": "up",
-	"s": "left",
-	"d": "down",
-	"f": "right",
+	"exitpc": "x+b",
 	// misc
-	"=": "+", // obviates the need for shift on an American keyboard
 	"test": "1,1" // test the script while sounding less psychotic
 
 };
@@ -121,8 +115,6 @@ var touchCommands = {
 
 		// att1 = 1, att2 = 2, etc.
 		'': /^att/,
-		// heal = h
-		'h': /^heal/,
 		// reuse = u for reUse
 		'u': /^reuse/,
 		// run = r
@@ -138,9 +130,9 @@ var touchCommands = {
 		// poke = p
 		'p': /^poke/,
 		// liberate = l
-		"l": /^liberate/,
-		// quit = q
-		"q": /^quit/
+		'l': /^liberate/,
+		// exitpc = e
+		'e': /^exitpc/
 		 
 	}, alias;
 
@@ -164,6 +156,18 @@ var getStringMatch = function(str, regex){
 	return ""
 }
 
+var spacestate = 0;
+
+String.prototype.repeat = function(count) {
+	if (count < 1) return '';
+	var result = '', pattern = this.valueOf();
+	while (count > 1) {
+		if (count & 1) result += pattern;
+			count >>= 1, pattern += pattern;
+	}
+	return result + pattern;
+};
+
 $(function(){
 	var Room_proto = myWindow.App.Room.prototype;
 	var original_send = Room_proto.send;
@@ -185,7 +189,7 @@ $(function(){
 				}
 			
 				// Transform!
-				arguments[0] = message = message.replace(commandRegex, output);
+				arguments[0] = message = message.replace(commandRegex, output) + (" ".repeat(spacestate));
 
 				// Log
 				console.log("TPP Commands: Sent command \"" + output + "\" (\"" + command + "\")");
