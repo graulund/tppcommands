@@ -34,7 +34,7 @@
  (function(){
 "use strict";
 
-var TPP_C_VERSION = "9.0";
+var TPP_C_VERSION = "10.0";
 
 var myWindow;
 try {
