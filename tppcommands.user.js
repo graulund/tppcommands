@@ -112,6 +112,7 @@ var touchCommands = {
 	"f": "right",
 	// misc
 	"=": "+", // obviates the need for shift on an American keyboard
+	"test": "1,1", // test the script while sounding less psychotic
 
 };
 
