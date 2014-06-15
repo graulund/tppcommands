@@ -5,7 +5,7 @@
 
 // @include     /^https?://(www|beta)\.twitch\.tv\/(twitchplayspokemon(/(chat.*)?)?|chat\/.*channel=twitchplayspokemon.*)$/
 
-// @version 9.0
+// @version 10.0
 // @updateURL http://graulund.github.io/tppcommands/tppcommands.user.js
 // @grant       unsafeWindow
 // ==/UserScript==
@@ -72,7 +72,7 @@ var touchCommands = {
 	"reuse": "77,188",
 	"run":   "126,191",
 	"switch": "210,190",
-	"throw": ["77,150", "160,20"]
+	"throw": ["77,150", "160,20"],
 	// bag commands
 	"mail": ["X","33,88","155,133","A"],
 	"mailsort": ["160,180","255,141"],
