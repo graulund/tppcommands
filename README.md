@@ -54,6 +54,11 @@ Here's the list of commands that work:
 * **run**:    126,191
 * **throw**:  77,150 / 160,20
 
+#### Mail commands
+* **mail**: X / 33,88 / 155,133 / A
+* **mailsort**: 160,180 / 255,141
+
+
 Commands with more than one set of coordinates means that one of these coordinate sets are chosen at random.  Sometimes one input is more common than others.
 
 Simply type them as you would any other command (a, b, left, etc.) in the Twitch chat -- i.e. it works with extra spaces/text and no matter what casing you use, as long as you start your message with it.
