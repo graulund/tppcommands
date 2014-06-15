@@ -74,6 +74,7 @@ var touchCommands = {
 	"switch": "210,190",
 	"throw": ["77,150", "160,20"],
 	// bag commands
+	"tm": "66,111", //opens bag and TM pocket
 	"mail": ["X","33,88","155,133","A"],
 	"mailsort": ["160,180","255,141"],
 	"toss": ["250,165","240,65"],
