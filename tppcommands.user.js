@@ -5,7 +5,7 @@
 
 // @include     /^https?://(www|beta)\.twitch\.tv\/(twitchplayspokemon(/(chat.*)?)?|chat\/.*channel=twitchplayspokemon.*)$/
 
-// @version 9.0
+// @version 10.0
 // @updateURL http://graulund.github.io/tppcommands/tppcommands.user.js
 // @grant       unsafeWindow
 // ==/UserScript==
@@ -34,7 +34,7 @@
  (function(){
 "use strict";
 
-var TPP_C_VERSION = "9.0";
+var TPP_C_VERSION = "10.0";
 
 var myWindow;
 try {
@@ -50,6 +50,7 @@ console.log("TPP Commands version " + TPP_C_VERSION + " launched");
 // Configuration (all keys should be lowercase)
 
 var touchCommands = {
+	// battle commands
 	"a1f" : ["1,40","B"],
 	"a1l1": ["1,75"],
 	"a1l2": ["1,40","1,40","255,75"],
@@ -68,8 +69,18 @@ var touchCommands = {
 	"att4":  "255,85",
 	"heal": ["77,150", "80,20"],
 	"learn": "5,170",
+	"reuse": "77,188",
+	"run":   "126,191",
+	"switch": "210,190",
+	"throw": ["77,150", "160,20"],
+	// bag commands
+	"tm": "66,111", //opens bag and TM pocket
 	"mail": ["X","33,88","155,133","A"],
 	"mailsort": ["160,180","255,141"],
+	"toss": ["250,165","240,65"],
+	"cancel": ["244,188"], // add to directions to auto-close most menus
+	// party commands
+	"o": "255,133", // use to counter-troll
 	"order": ["X","44,44", "255,133"],
 	"order1": "1,22",
 	"order2": "133,22",
@@ -83,10 +94,20 @@ var touchCommands = {
 	"poke4": "133,77",
 	"poke5": "1,133",
 	"poke6": "133,133",
-	"reuse": "77,188",
-	"run":   "126,191",
-	"switch": "210,190",
-	"throw": ["77,150", "160,20"]
+	"take": "160,160",
+	// PC commands
+	"mon1": "40,70",
+	"mon2": "70,70",
+	"mon3": "40,100",
+	"mon4": "70,115",
+	"mon5": "40,130",
+	"mon6": "70,135",
+	"deposit": "255,55",
+	"withdraw": "255,55",
+	"liberate": "210,115", // release
+	"exitpc": "x+b",
+	// misc
+	"test": "1,1"
 };
 
 (function addAliases() {
