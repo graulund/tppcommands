@@ -1,63 +1,21 @@
 # Twitch Plays Pokemon Commands
 
-The DS touch screen is hard to press in Twitch Plays Pokemon. This userscript offers a way to press oft-used buttons on the touch screen, like the different attacks, mons and so on, by converting predefined commands into coordinates that the stream accepts.
+The 3DS touch screen is hard to press in Twitch Plays Pokemon. This userscript offers a way to press oft-used buttons on the touch screen, like the different attacks, mons and so on, by converting predefined commands into coordinates that the stream accepts.
 
 
-These commands are now optimised for Pokémon Black
+These commands are now optimised for Pokémon X, although most are not yet implemented.  Keep checking back for more
+
 ## Commands
 Here's the list of commands that work:
 
-#### Use attack, forget a move about to be learned 
-* **a1f** : 1,40 / B
-* **a2f** : 255,40 / B
-* **a3f** : 1,85 / B
-* **a4f** : 255,85 / B
-
-#### Use attack X, learn a new move over attack y. learn is only meant for the final step. 
-* **learn**: 5,170 
-* **a1l1**: 1,75
-* **a1l2**: 1,40 / 1,40 / 255,75
-* **a1l3**: 1,40 / 1,140
-* **a1l4**: 1,40 / 255,140
-* **a2l1**: 255,40 / 255,40 / 1,75
-* **a2l2**: 255,75
-* **a2l3**: 255,40 / 1,140
-* **a2l4**: 255,40 / 255,140
-
 #### General attacking move 
-* **att1**:   1,75
-* **att2**:   255,75
-* **att3**:   1,85
-* **att4**:   255,85
-
-#### Commands to switch and choose Pokémon in battle
-* **switch**: 210,190
-* **poke1**:  1,22
-* **poke2**:  133,22
-* **poke3**:  1,77
-* **poke4**:  133,77
-* **poke5**:  1,133
-* **poke6**:  133,133
-
-#### Commands to change team order outside of battle
-* **order** : X / 44,44 / 255,133
-* **order1**: 1,22
-* **order2**: 133,22
-* **order3**: 1,77
-* **order4**: 133,77
-* **order5**: 1,133
-* **order6**: 133,133
+* **att1**:   158,60
+* **att2**:   161,60
+* **att3**:   158,120
+* **att4**:   161,120
 
 #### Miscellaneous commands 
-* **heal**:   77,150 / 80,20
-* **reuse**:  77,188
-* **run**:    126,191
-* **throw**:  77,150 / 160,20
-
-#### Mail commands
-* **mail**: X / 33,88 / 155,133 / A
-* **mailsort**: 160,180 / 255,141
-
+* **run**:    160,239
 
 Commands with more than one set of coordinates means that one of these coordinate sets are chosen at random.  Sometimes one input is more common than others.
 
