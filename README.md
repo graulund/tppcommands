@@ -8,14 +8,41 @@ These commands are now optimised for Pokémon X, although most are not yet imple
 ## Commands
 Here's the list of commands that work:
 
-#### General attacking move 
-* **att1**:   158,60
-* **att2**:   161,60
-* **att3**:   158,120
-* **att4**:   161,120
+#### General attacking move
+* **att1**: 140,60
+* **att2**: 180,60
+* **att3**: 140,120
+* **att4**: 180,120
 
-#### Miscellaneous commands 
-* **run**:    160,239
+#### Using attack while forgetting any new move
+* **a1f**: 140,45+B / B
+* **a2f**: 180,45+B / B
+* **a3f**: 140,108+B / B
+* **a4f**: 180,108+B / B
+
+#### Using attack X while attempting to learn attack Y
+* **a1l1**: 140,90+A
+* **a1l2**: 140,45 / 180,90+A
+* **a1l3**: 140,45 / 10,162+A
+* **a1l4**: 140,45 / 350,162+A
+
+* **a2l1**: 180,45 / 140,90+A
+* **a2l2**: 180,90+A
+* **a2l3**: 180,45 / 10,162+A
+* **a2l4**: 180,45 / 350,162+A
+
+* **a3l1**: 140,108 / 140,90+A
+* **a3l2**: 140,108 / 180,90+A
+* **a3l3**: 140,130+A
+* **a3l4**: 140,108 / 350,162+A
+
+* **a4l1**: 180,108 / 140,90+A
+* **a4l2**: 180,108 / 180,90+A
+* **a4l3**: 180,108 / 10,162+A
+* **a4l4**: 180,130+A
+
+#### Miscellaneous commands
+* **run**: 160,239+B
 
 Commands with more than one set of coordinates means that one of these coordinate sets are chosen at random.  Sometimes one input is more common than others.
 
