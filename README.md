@@ -2,8 +2,7 @@
 
 The 3DS touch screen is hard to press in Twitch Plays Pokemon. This userscript offers a way to press oft-used buttons on the touch screen, like the different attacks, mons and so on, by converting predefined commands into coordinates that the stream accepts.
 
-
-These commands are now optimised for Pokémon X, although most are not yet implemented.  Keep checking back for more
+These commands are now optimised for Pokémon X.
 
 ## Commands
 Here's the list of commands that work:
