@@ -7,7 +7,8 @@
 
 // @version 10.1
 // @updateURL http://graulund.github.io/tppcommands/tppcommands.user.js
-// @grant       unsafeWindow
+// @grant       none
+// @run-at      document-end
 // ==/UserScript==
 
 /*
@@ -31,19 +32,30 @@
  
  // BIG shoutouts to the original TPP chat filter script. Good pointers.
  
- (function(){
+(function(code){
+"use strict";
+
+    // ----------------------------
+    // Greasemonkey support
+    // ----------------------------
+    // Greasemonkey userscripts run in a separate environment and cannot use global
+    // variables from the page directly. Vecause of this, we package all out code inside
+    // a script tag and have it run in the context of the main page.
+
+    // TODO: is there a way to get better error messages? It won't show any line numbers.
+
+    var s = document.createElement('script');
+    s.appendChild(document.createTextNode(
+       '(' + code.toString() + '());'
+    ));
+    document.body.appendChild(s);
+
+}(function(){
 "use strict";
 
 var TPP_C_VERSION = "10.1";
 
-var myWindow;
-try {
-    myWindow = unsafeWindow;
-} catch(e) {
-    myWindow = window;
-}
-
-var $ = myWindow.jQuery, console = myWindow.console;
+var $ = window.jQuery, console = window.console;
 
 console.log("TPP Commands version " + TPP_C_VERSION + " launched");
 
@@ -140,7 +152,7 @@ var getStringMatch = function(str, regex){
 }
 
 $(function(){
-	var Room_proto = myWindow.App.Room.prototype;
+	var Room_proto = window.App.Room.prototype;
 	var original_send = Room_proto.send;
 	Room_proto.send = function(message){
 
@@ -171,4 +183,4 @@ $(function(){
 	};
 });
 
-}());
+}));
