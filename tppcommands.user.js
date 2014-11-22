@@ -5,7 +5,7 @@
 
 // @include     /^https?://(www|beta)\.twitch\.tv\/(twitchplayspokemon(/(chat.*)?)?|chat\/.*channel=twitchplayspokemon.*)$/
 
-// @version 10.1
+// @version 11.0
 // @updateURL http://graulund.github.io/tppcommands/tppcommands.user.js
 // @grant       none
 // @run-at      document-end
