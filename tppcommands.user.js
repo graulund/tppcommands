@@ -39,7 +39,7 @@
     // Greasemonkey support
     // ----------------------------
     // Greasemonkey userscripts run in a separate environment and cannot use global
-    // variables from the page directly. Vecause of this, we package all out code inside
+    // variables from the page directly. Because of this, we package all out code inside
     // a script tag and have it run in the context of the main page.
 
     // TODO: is there a way to get better error messages? It won't show any line numbers.
@@ -53,7 +53,7 @@
 }(function(){
 "use strict";
 
-var TPP_C_VERSION = "10.1";
+var TPP_C_VERSION = "11.0";
 
 var $ = window.jQuery, console = window.console;
 
